@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Enos-Layuk-Voltes-Vanatics-1st-Prize-Trophy.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -107,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cach-trang-tri-Tet-cho-van-phong-Cong-Ty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Enos-Layuk-Voltes-Vanatics-1st-Prize-Trophy.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
