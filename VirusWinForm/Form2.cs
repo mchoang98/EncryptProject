@@ -22,7 +22,7 @@ namespace VirusWinForm
             if(textBox1.Text.Length>0)
             {
                 if (textBox1.Text == "123456")
-                    MessageBox.Show("OK");
+                    MessageBox.Show("Your Files have been Decrypted");
                 else
                     MessageBox.Show("Wrong password! Please try again!");
             }

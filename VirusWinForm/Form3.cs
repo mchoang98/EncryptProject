@@ -10,40 +10,37 @@ using System.Windows.Forms;
 
 namespace VirusWinForm
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
-           
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.facebook.com");
-
-
+            e.Cancel = true;
         }
 
-        private void InputKey_Click(object sender, EventArgs e)
+        private void tiepTucbtn_Click(object sender, EventArgs e)
         {
-            var myForm = new Form2();
-            myForm.Show();
+            var mine = new Form1();
+            mine.Show();
             this.Hide();
         }
     }

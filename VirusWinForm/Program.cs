@@ -22,7 +22,7 @@ namespace VirusWinForm
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form3());
             //    } else
             //    {
             //        MessageBox.Show(String.Format("Your inputed key is: {0}", args[0]));
