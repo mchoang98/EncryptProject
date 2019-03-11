@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Enos-Layuk-Voltes-Vanatics-1st-Prize-Trophy.ico" />
+    <None Include="Resources\close.png" />
     <None Include="Resources\lock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

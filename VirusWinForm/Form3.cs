@@ -43,5 +43,12 @@ namespace VirusWinForm
             mine.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var mine = new Form1();
+            mine.Show();
+            this.Hide();
+        }
     }
 }
