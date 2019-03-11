@@ -63,6 +63,16 @@ namespace VirusWinForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cach_trang_tri_Tet_cho_van_phong_Cong_Ty {
             get {
                 object obj = ResourceManager.GetObject("Cach-trang-tri-Tet-cho-van-phong-Cong-Ty", resourceCulture);
