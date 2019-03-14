@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static VirusWinForm.Wallpaper;
 
 namespace VirusWinForm
 {
@@ -17,8 +21,11 @@ namespace VirusWinForm
 
             // if (args.Length <= 0)
 
-            ScanFileAndCrypt scf = new ScanFileAndCrypt();
-            scf.DirectorySearch(@"C:\Users\DELL\Downloads\hack");
+            // ScanFileAndCrypt scf = new ScanFileAndCrypt();
+
+            //scf.DirectorySearch(@"C:\Users\DELL\Downloads\hack");
+            Wallpaper wall = new Wallpaper();
+            wall.Set("http://www.contoso.com/", Style.Center);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

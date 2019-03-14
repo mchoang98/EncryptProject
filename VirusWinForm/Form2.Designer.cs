@@ -65,7 +65,7 @@
             // BackBtn
             // 
             this.BackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BackBtn.Font = new System.Drawing.Font("Showcard Gothic", 15.75F);
+            this.BackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.BackBtn.ForeColor = System.Drawing.Color.Red;
             this.BackBtn.Location = new System.Drawing.Point(22, 123);
             this.BackBtn.Name = "BackBtn";
@@ -78,7 +78,7 @@
             // OKbtn
             // 
             this.OKbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.OKbtn.Font = new System.Drawing.Font("Showcard Gothic", 15.75F);
+            this.OKbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.OKbtn.ForeColor = System.Drawing.Color.DarkGreen;
             this.OKbtn.Location = new System.Drawing.Point(231, 123);
             this.OKbtn.Name = "OKbtn";
