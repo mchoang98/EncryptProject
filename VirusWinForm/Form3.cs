@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static VirusWinForm.Wallpaper;
 
 namespace VirusWinForm
 {
@@ -41,7 +43,14 @@ namespace VirusWinForm
         {
             var mine = new Form1();
             mine.Show();
+            String sMyPath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath),
+               "ABC.jpg");
+            Properties.Resources.eeaa1c13c77574abae126e2f8462008c.Save(sMyPath);
+            Wallpaper wall = new Wallpaper();
+            var UriOK = new Uri(sMyPath);
+            wall.Set(UriOK, Style.Stretched);
             this.Hide();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,6 +58,11 @@ namespace VirusWinForm
             var mine = new Form1();
             mine.Show();
             this.Hide();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

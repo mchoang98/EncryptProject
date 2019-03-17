@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.BuyKey = new System.Windows.Forms.Button();
-            this.InputKey = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,28 +58,13 @@
             this.BuyKey.BackColor = System.Drawing.Color.Red;
             this.BuyKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuyKey.ForeColor = System.Drawing.Color.White;
-            this.BuyKey.Location = new System.Drawing.Point(105, 175);
+            this.BuyKey.Location = new System.Drawing.Point(234, 180);
             this.BuyKey.Name = "BuyKey";
             this.BuyKey.Size = new System.Drawing.Size(101, 65);
             this.BuyKey.TabIndex = 3;
             this.BuyKey.Text = "Buy Key";
             this.BuyKey.UseVisualStyleBackColor = false;
             this.BuyKey.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // InputKey
-            // 
-            this.InputKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.InputKey.BackColor = System.Drawing.Color.LimeGreen;
-            this.InputKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputKey.ForeColor = System.Drawing.Color.White;
-            this.InputKey.Location = new System.Drawing.Point(349, 175);
-            this.InputKey.Name = "InputKey";
-            this.InputKey.Size = new System.Drawing.Size(101, 65);
-            this.InputKey.TabIndex = 4;
-            this.InputKey.Text = "Input Key";
-            this.InputKey.UseVisualStyleBackColor = false;
-            this.InputKey.Click += new System.EventHandler(this.InputKey_Click);
             // 
             // label2
             // 
@@ -117,7 +101,6 @@
             this.ClientSize = new System.Drawing.Size(574, 287);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.InputKey);
             this.Controls.Add(this.BuyKey);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -142,7 +125,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BuyKey;
-        private System.Windows.Forms.Button InputKey;
         private System.Windows.Forms.Label label2;
     }
 }

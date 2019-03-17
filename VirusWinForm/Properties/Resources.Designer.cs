@@ -103,9 +103,29 @@ namespace VirusWinForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eeaa1c13c77574abae126e2f8462008c {
+            get {
+                object obj = ResourceManager.GetObject("eeaa1c13c77574abae126e2f8462008c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exclamation_mark {
             get {
                 object obj = ResourceManager.GetObject("exclamation-mark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hacked {
+            get {
+                object obj = ResourceManager.GetObject("hacked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
